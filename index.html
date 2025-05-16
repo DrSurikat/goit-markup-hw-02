@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+
+    <!-- Підключення modern-normalize для уніфікації стилів у браузерах -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+    />
+
+    <!-- Підключення шрифтів для заголовків і тексту -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Основний CSS-файл зі стилями для всієї сторінки -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Верхній блок сторінки з логотипом, навігацією та контактами -->
+    <header class="header">
+      <div class="container header__container">
+        <!-- Логотип компанії -->
+        <a href="#" class="logo">
+          <span class="iris">WEB</span><span class="studio">STUDIO</span>
+        </a>
+
+        <!-- Головне меню навігації по сторінці -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link active">Studio</a></li>
+            <li><a href="#" class="nav__link">Portfolio</a></li>
+            <li><a href="#" class="nav__link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <!-- Контактна інформація студії -->
+        <address class="contact">
+          <a href="mailto:info@devstudio.com" class="contact__link"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+110001111111" class="contact__link"
+            >+11 (000) 111-11-11</a
+          >
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!-- Головний банер (hero section) з закликом до дії -->
+      <section class="hero">
+        <div class="container">
+          <!-- Основне повідомлення/слоган компанії -->
+          <h1>Effective Solutions for Your Business</h1>
+          <!-- Кнопка замовлення послуги -->
+          <button class="btn-primary">Order Service</button>
+        </div>
+      </section>
+
+      <!-- Секція з цінностями/перевагами компанії -->
+      <section class="features">
+        <div class="container features__list">
+          <div class="feature">
+            <h3>Strategy</h3>
+            <p>
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Punctuality</h3>
+            <p>
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Diligence</h3>
+            <p>
+              Research and confirm brands with the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Technologies</h3>
+            <p>
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секція з представленням команди -->
+      <section class="team">
+        <div class="container">
+          <!-- Заголовок секції команди -->
+          <h2>Our Team</h2>
+
+          <!-- Список членів команди -->
+          <ul class="team__cards">
+            <li class="team-card">
+              <img src="images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <h3>Mark Guerrero</h3>
+              <p>Product Designer</p>
+            </li>
+            <li class="team-card">
+              <img src="images/tom.jpg" alt="Tom Ford" width="264" />
+              <h3>Tom Ford</h3>
+              <p>Frontend Developer</p>
+            </li>
+            <li class="team-card">
+              <img src="images/camila.jpg" alt="Camila Garcia" width="264" />
+              <h3>Camila Garcia</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="team-card">
+              <img src="images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <h3>Daniel Wilson</h3>
+              <p>UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Секція з портфоліо проєктів -->
+      <section class="portfolio">
+        <div class="container">
+          <!-- Заголовок секції -->
+          <h2>Our Portfolio</h2>
+
+          <!-- Список прикладів реалізованих проєктів -->
+          <ul class="portfolio__grid">
+            <li class="project-card">
+              <img src="images/banking.jpg" alt="Banking App" width="360" />
+              <h3>Banking App</h3>
+              <p>App</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/payment.jpg"
+                alt="Cashless Payment"
+                width="360"
+              />
+              <h3>Cashless Payment</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/meditation.jpg"
+                alt="Meditation App"
+                width="360"
+              />
+              <h3>Meditation App</h3>
+              <p>App</p>
+            </li>
+            <li class="project-card">
+              <img src="images/taxi.jpg" alt="Taxi Service" width="360" />
+              <h3>Taxi Service</h3>
+              <p>Marketing</p>
+            </li>
+            <li class="project-card">
+              <img
+                src="images/screen.jpg"
+                alt="Screen Illustrations"
+                width="360"
+              />
+              <h3>Screen Illustrations</h3>
+              <p>Design</p>
+            </li>
+            <li class="project-card">
+              <img src="images/online.jpg" alt="Online Courses" width="360" />
+              <h3>Online Courses</h3>
+              <p>Marketing</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Нижній блок сайту з додатковою інформацією -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Повтор логотипу -->
+        <a href="#" class="logo">
+          <span class="iris">WEB</span><span class="studio">STUDIO</span>
+        </a>
+
+        <!-- Короткий опис діяльності компанії -->
+        <p class="footer__text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

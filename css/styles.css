@@ -1,0 +1,273 @@
+/* ========== ЗМІННІ ДЛЯ КОЛЬОРІВ І ШРИФТІВ ========== */
+:root {
+  --iris: #4d5ae5; /* основний бренд */
+  --ocean: #404bbf; /* наведення на кнопки/посилання */
+  --navy-blue: #2e2f42; /* фон секцій hero/footer */
+  --green: #31d0aa; /* успішні повідомлення */
+  --slate: #434455; /* основний текст */
+  --light-slate: #8e8f99; /* додатковий текст */
+  --cornflower: #e7e9fc; /* рамки/границі */
+  --cloud: #f4f4fd; /* світлий фон (наприклад, команда) */
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+
+  --font-main: "Roboto", sans-serif;
+  --font-header: "Raleway", sans-serif;
+
+  --font-size-h1: 56px;
+  --font-size-h2: 36px;
+  --font-size-h3: 20px;
+  --font-size-body: 16px;
+}
+
+/* ========== БАЗОВІ НАЛАШТУВАННЯ ========== */
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-body);
+  line-height: 1.5;
+  color: var(--slate);
+  background-color: var(--white);
+  margin: 0;
+}
+
+/* Контейнер для обмеження ширини контенту */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ========== ХЕДЕР І НАВІГАЦІЯ ========== */
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
+  padding: 24px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Логотип WebStudio */
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.logo .iris {
+  color: var(--iris);
+}
+
+.logo .studio {
+  color: var(--navy-blue);
+}
+
+/* Головне меню */
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--navy-blue);
+  font-weight: 500;
+  transition: color 250ms;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link.active {
+  color: var(--ocean);
+}
+
+/* Контактні дані */
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact__link {
+  color: var(--slate);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 250ms;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--ocean);
+}
+
+/* ========== HERO СЕКЦІЯ (головне повідомлення) ========== */
+.hero {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 188px 0;
+}
+
+.hero h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+/* Кнопка заклику до дії */
+.btn-primary {
+  background-color: var(--iris);
+  color: var(--white);
+  border: none;
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--ocean);
+}
+
+/* ========== СЕКЦІЯ ПЕРЕВАГ ========== */
+.features {
+  padding: 120px 0;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.feature h3 {
+  font-size: var(--font-size-h3);
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.feature p {
+  font-size: var(--font-size-body);
+  color: var(--slate);
+}
+
+/* ========== СЕКЦІЯ КОМАНДА ========== */
+.team {
+  background-color: var(--cloud);
+  padding: 120px 0;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 72px;
+  color: var(--navy-blue);
+}
+
+.team__cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-card {
+  background-color: var(--white);
+  border-radius: 0 0 4px 4px;
+  width: 264px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-card h3 {
+  margin: 32px 0 8px;
+  font-size: 20px;
+  color: var(--navy-blue);
+}
+
+.team-card p {
+  margin: 0 0 32px;
+  color: var(--slate);
+}
+
+/* ========== СЕКЦІЯ ПОРТФОЛІО ========== */
+.portfolio {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 72px;
+  color: var(--navy-blue);
+}
+
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card {
+  background-color: var(--white);
+  text-align: left;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h3 {
+  font-size: var(--font-size-h3);
+  color: var(--navy-blue);
+  margin: 32px 16px 8px;
+}
+
+.project-card p {
+  margin: 0 16px 32px;
+  color: var(--slate);
+}
+
+/* ========== ФУТЕР (контактна інформація та опис) ========== */
+.footer {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  padding: 100px 0;
+  text-align: left;
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer__text {
+  max-width: 264px;
+  font-size: var(--font-size-body);
+}
