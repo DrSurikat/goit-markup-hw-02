@@ -113,6 +113,10 @@ body {
   background-color: #f4f4fd;
 }
 
+.team-item {
+  background-color: #ffffff;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -164,6 +168,10 @@ body {
   color: #f4f4fd;
 }
 
+.footer .logo-accent {
+  color: #f4f4fd;
+}
+
 /* === Reset styles === */
 ul,
 ol {
@@ -177,9 +185,7 @@ a {
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  /* intentionally left without styles due to validation limits */
 }
 
 button {
