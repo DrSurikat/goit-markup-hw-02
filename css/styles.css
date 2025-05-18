@@ -72,6 +72,8 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -80,9 +82,17 @@ body {
 }
 
 /* === Features Section === */
+.features {
+  padding: 120px 0;
+}
+
 .features-list {
-  list-style: none;
-  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.features-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .features-title {
@@ -103,6 +113,7 @@ body {
 /* === Team Section === */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section-title {
@@ -112,6 +123,17 @@ body {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 0;
 }
 
 .team-name {
@@ -130,6 +152,10 @@ body {
 }
 
 /* === Portfolio Section === */
+.portfolio {
+  padding: 120px 0;
+}
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -140,12 +166,16 @@ body {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   list-style: none;
   padding: 0;
 }
 
 .portfolio-card {
   background-color: #ffffff;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-name {
@@ -166,6 +196,7 @@ body {
 /* === Footer === */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-text {
