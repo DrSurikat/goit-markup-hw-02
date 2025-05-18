@@ -80,6 +80,19 @@ body {
 }
 
 /* === Features Section === */
+.features {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+
 .features-title {
   font-weight: 500;
   font-size: 20px;
@@ -98,15 +111,6 @@ body {
 /* === Team Section === */
 .team {
   background-color: #f4f4fd;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  color: #2e2f42;
 }
 
 .team-name {
@@ -170,7 +174,6 @@ ol {
 
 a {
   text-decoration: none;
-  display: inline-block;
 }
 
 img {
