@@ -1,22 +1,28 @@
-/* ===================== ЗМІННІ ===================== */
+/* ========== ЗМІННІ ========== */
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
   --navy-blue: #2e2f42;
+  --green: #31d0aa;
   --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
   --white: #ffffff;
-  --cornflower: #e7e9fc;
+  --dairy: #fcfcfc;
 
   --font-main: "Roboto", sans-serif;
   --font-accent: "Raleway", sans-serif;
 }
 
-/* ===================== БАЗОВЕ ОФОРМЛЕННЯ ===================== */
+/* ========== БАЗОВІ СТИЛІ ========== */
 body {
   font-family: var(--font-main);
   color: var(--slate);
   background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin: 0;
 }
 
@@ -27,8 +33,8 @@ body {
   padding: 0 15px;
 }
 
-/* ===================== ЛОГОТИП ===================== */
-.logo-text {
+/* ========== ЛОГОТИП ========== */
+.logo {
   font-family: var(--font-accent);
   font-weight: 700;
   font-size: 18px;
@@ -47,7 +53,7 @@ body {
   color: var(--cloud);
 }
 
-/* ===================== НАВІГАЦІЯ ===================== */
+/* ========== НАВІГАЦІЯ ========== */
 .nav-list {
   list-style: none;
   padding: 0;
@@ -68,8 +74,12 @@ body {
   color: var(--ocean);
 }
 
-/* ===================== КОНТАКТИ ===================== */
-.contact-list {
+/* ========== КОНТАКТИ ========== */
+.contacts {
+  font-style: normal;
+}
+
+.contacts-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -88,12 +98,8 @@ body {
   color: var(--ocean);
 }
 
-.address-block {
-  font-style: normal;
-}
-
-/* ===================== HERO ===================== */
-.hero-section {
+/* ========== HERO-СЕКЦІЯ ========== */
+.hero {
   background-color: var(--navy-blue);
   padding: 188px 0;
   text-align: center;
@@ -125,18 +131,28 @@ body {
   background-color: var(--ocean);
 }
 
-/* ===================== FEATURES ===================== */
-.features-section {
+/* ========== ADVANTAGES-СЕКЦІЯ ========== */
+.advantages {
   padding: 120px 0;
 }
 
-.features-list {
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.advantages-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.features-item-title {
+.advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -145,27 +161,18 @@ body {
   margin-bottom: 8px;
 }
 
-.features-item-text {
+.advantages-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
 
-/* ===================== TEAM ===================== */
-.team-section {
+/* ========== TEAM-СЕКЦІЯ ========== */
+.team {
   background-color: var(--cloud);
   padding: 120px 0;
   text-align: center;
-}
-
-.team-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navy-blue);
-  margin-bottom: 72px;
 }
 
 .team-list {
@@ -174,13 +181,13 @@ body {
   margin: 0;
 }
 
-.team-card {
+.team-item {
   background-color: var(--white);
   width: 264px;
   margin: 0 auto;
 }
 
-.team-card-title {
+.team-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -189,7 +196,7 @@ body {
   margin: 32px 0 8px;
 }
 
-.team-card-text {
+.team-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -197,19 +204,10 @@ body {
   margin-bottom: 32px;
 }
 
-/* ===================== PORTFOLIO ===================== */
-.portfolio-section {
+/* ========== PORTFOLIO-СЕКЦІЯ ========== */
+.portfolio {
   padding: 120px 0;
   text-align: center;
-}
-
-.portfolio-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navy-blue);
-  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -218,7 +216,13 @@ body {
   margin: 0;
 }
 
-.portfolio-item-title {
+.portfolio-item {
+  background-color: var(--white);
+  width: 360px;
+  margin: 0 auto;
+}
+
+.portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -227,7 +231,7 @@ body {
   margin: 32px 16px 8px;
 }
 
-.portfolio-item-text {
+.portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -235,17 +239,17 @@ body {
   margin: 0 16px 32px;
 }
 
-/* ===================== FOOTER ===================== */
+/* ========== FOOTER ========== */
 .footer-section {
   background-color: var(--navy-blue);
-  color: var(--white);
   padding: 100px 0;
+  color: var(--white);
 }
 
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
-  max-width: 264px;
 }

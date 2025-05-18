@@ -1,51 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-
-    <!-- Підключення normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
-    />
-
-    <!-- Підключення шрифтів -->
+    <!-- Підключення Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Основний файл стилів -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Хедер -->
+    <!-- Шапка сайту -->
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="./index.html" class="logo-text">
-            WEB<span class="logo-accent">STUDIO</span>
-          </a>
+          <!-- Логотип -->
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <!-- Навігаційне меню -->
           <ul class="nav-list">
-            <li><a href="./index.html" class="nav-link">Studio</a></li>
-            <li><a href="" class="nav-link">Portfolio</a></li>
-            <li><a href="" class="nav-link">Contacts</a></li>
+            <li><a href="./index.html" class="nav-link">Студія</a></li>
+            <li><a href="#" class="nav-link">Портфоліо</a></li>
+            <li><a href="#" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
-
-        <address class="address-block">
-          <ul class="contact-list">
+        <!-- Контактна інформація -->
+        <address class="address">
+          <ul class="address-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact-link"
+              <a href="mailto:info@devstudio.com" class="address-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="contact-link"
-                >+11 (000) 111-11-11</a
+              <a href="tel:+380961111111" class="address-link"
+                >+38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -54,141 +47,137 @@
     </header>
 
     <main>
-      <!-- Головна секція -->
-      <section class="hero-section">
+      <!-- Герой-секція -->
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button">Order Service</button>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button">Замовити послугу</button>
         </div>
       </section>
 
-      <!-- Переваги -->
-      <section class="features-section">
+      <!-- Секція "Наші переваги" -->
+      <section class="advantages">
         <div class="container">
-          <ul class="features-list">
+          <h2 class="section-title">Наші переваги</h2>
+          <ul class="advantages-list">
             <li>
-              <h3 class="features-item-title">Strategy</h3>
-              <p class="features-item-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+              <h3 class="advantages-title">Увага до деталей</h3>
+              <p class="advantages-text">
+                Індивідуальний підхід до кожного проєкту.
               </p>
             </li>
             <li>
-              <h3 class="features-item-title">Punctuality</h3>
-              <p class="features-item-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
+              <h3 class="advantages-title">Пунктуальність</h3>
+              <p class="advantages-text">
+                Дотримання термінів виконання робіт.
               </p>
             </li>
             <li>
-              <h3 class="features-item-title">Diligence</h3>
-              <p class="features-item-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+              <h3 class="advantages-title">Планування</h3>
+              <p class="advantages-text">Чітке планування етапів проєкту.</p>
             </li>
             <li>
-              <h3 class="features-item-title">Technologies</h3>
-              <p class="features-item-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+              <h3 class="advantages-title">Сучасні технології</h3>
+              <p class="advantages-text">
+                Використання новітніх технологій у розробці.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Команда -->
-      <section class="team-section">
+      <!-- Секція "Наша команда" -->
+      <section class="team">
         <div class="container">
-          <h2 class="team-title">Our Team</h2>
+          <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-card">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="team-card-title">Mark Guerrero</h3>
-              <p class="team-card-text">Product Designer</p>
+            <li class="team-item">
+              <img src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <h3 class="team-name">Ігор Дем'яненко</h3>
+              <p class="team-position">Product Designer</p>
             </li>
-            <li class="team-card">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
-              <h3 class="team-card-title">Tom Ford</h3>
-              <p class="team-card-text">Frontend Developer</p>
+            <li class="team-item">
+              <img src="./images/team2.jpg" alt="Ольга Рєпіна" width="270" />
+              <h3 class="team-name">Ольга Рєпіна</h3>
+              <p class="team-position">Frontend Developer</p>
             </li>
-            <li class="team-card">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
-              <h3 class="team-card-title">Camila Garcia</h3>
-              <p class="team-card-text">Marketing</p>
+            <li class="team-item">
+              <img src="./images/team3.jpg" alt="Микола Тарасов" width="270" />
+              <h3 class="team-name">Микола Тарасов</h3>
+              <p class="team-position">Marketing</p>
             </li>
-            <li class="team-card">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
-              <h3 class="team-card-title">Daniel Wilson</h3>
-              <p class="team-card-text">UI Designer</p>
+            <li class="team-item">
+              <img src="./images/team4.jpg" alt="Михайло Єрмаков" width="270" />
+              <h3 class="team-name">Михайло Єрмаков</h3>
+              <p class="team-position">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Портфоліо -->
-      <section class="portfolio-section">
+      <!-- Секція "Наше портфоліо" -->
+      <section class="portfolio">
         <div class="container">
-          <h2 class="portfolio-title">Our Portfolio</h2>
+          <h2 class="section-title">Наше портфоліо</h2>
           <ul class="portfolio-list">
-            <li>
-              <img src="./images/banking.jpg" alt="Banking App" width="360" />
-              <h3 class="portfolio-item-title">Banking App</h3>
-              <p class="portfolio-item-text">App</p>
-            </li>
-            <li>
+            <li class="portfolio-item">
               <img
-                src="./images/payment.jpg"
-                alt="Cashless Payment"
+                src="./images/portfolio1.jpg"
+                alt="Банківський додаток"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Cashless Payment</h3>
-              <p class="portfolio-item-text">Marketing</p>
+              <h3 class="portfolio-title">Банківський додаток</h3>
+              <p class="portfolio-text">App</p>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
-                src="./images/meditation.jpg"
-                alt="Meditation App"
+                src="./images/portfolio2.jpg"
+                alt="Безготівковий розрахунок"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Meditation App</h3>
-              <p class="portfolio-item-text">App</p>
+              <h3 class="portfolio-title">Безготівковий розрахунок</h3>
+              <p class="portfolio-text">Marketing</p>
             </li>
-            <li>
-              <img src="./images/taxi.jpg" alt="Taxi Service" width="360" />
-              <h3 class="portfolio-item-title">Taxi Service</h3>
-              <p class="portfolio-item-text">Marketing</p>
+            <li class="portfolio-item">
+              <img src="./images/portfolio3.jpg" alt="Медитація" width="360" />
+              <h3 class="portfolio-title">Медитація</h3>
+              <p class="portfolio-text">App</p>
             </li>
-            <li>
+            <li class="portfolio-item">
+              <img src="./images/portfolio4.jpg" alt="Таксі" width="360" />
+              <h3 class="portfolio-title">Таксі</h3>
+              <p class="portfolio-text">Marketing</p>
+            </li>
+            <li class="portfolio-item">
               <img
-                src="./images/screen.jpg"
-                alt="Screen Illustrations"
+                src="./images/portfolio5.jpg"
+                alt="Екранні ілюстрації"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Screen Illustrations</h3>
-              <p class="portfolio-item-text">Design</p>
+              <h3 class="portfolio-title">Екранні ілюстрації</h3>
+              <p class="portfolio-text">Design</p>
             </li>
-            <li>
-              <img src="./images/online.jpg" alt="Online Courses" width="360" />
-              <h3 class="portfolio-item-title">Online Courses</h3>
-              <p class="portfolio-item-text">Marketing</p>
+            <li class="portfolio-item">
+              <img
+                src="./images/portfolio6.jpg"
+                alt="Онлайн курси"
+                width="360"
+              />
+              <h3 class="portfolio-title">Онлайн курси</h3>
+              <p class="portfolio-text">Marketing</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <!-- Футер -->
-    <footer class="footer-section">
+    <!-- Футер сайту -->
+    <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo-text">
-          WEB<span class="footer-logo-accent">STUDIO</span>
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-accent">Studio</span></a
+        >
+        <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
       </div>
     </footer>
   </body>
