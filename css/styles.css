@@ -1,4 +1,4 @@
-/* ========== ЗМІННІ ========== */
+/* ===================== ЗМІННІ ===================== */
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -15,7 +15,7 @@
   --font-accent: "Raleway", sans-serif;
 }
 
-/* ========== БАЗОВІ СТИЛІ ========== */
+/* ===================== BASE ===================== */
 body {
   font-family: var(--font-main);
   color: var(--slate);
@@ -26,14 +26,25 @@ body {
   margin: 0;
 }
 
-/* Контейнер */
+/* ===================== CONTAINER ===================== */
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* ========== ЛОГОТИП ========== */
+/* ===================== HEADER ===================== */
+.header {
+  padding: 24px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
 .logo {
   font-family: var(--font-accent);
   font-weight: 700;
@@ -49,24 +60,26 @@ body {
   color: var(--navy-blue);
 }
 
-.footer-logo-accent {
+.footer .logo-accent {
   color: var(--cloud);
 }
 
-/* ========== НАВІГАЦІЯ ========== */
+/* Navigation */
 .nav-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-link {
-  text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -74,18 +87,18 @@ body {
   color: var(--ocean);
 }
 
-/* ========== КОНТАКТИ ========== */
+/* ===================== CONTACTS ===================== */
 .contacts {
   font-style: normal;
 }
 
 .contacts-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.contact-link {
+.contacts-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -93,34 +106,34 @@ body {
   text-decoration: none;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--ocean);
 }
 
-/* ========== HERO-СЕКЦІЯ ========== */
+/* ===================== HERO ===================== */
 .hero {
   background-color: var(--navy-blue);
-  padding: 188px 0;
   text-align: center;
+  padding: 188px 0;
 }
 
 .hero-title {
+  color: var(--white);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  color: var(--white);
   margin-bottom: 48px;
 }
 
 .hero-button {
-  background-color: var(--iris);
   font-family: var(--font-main);
+  background-color: var(--iris);
+  color: var(--white);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--white);
   border: none;
   padding: 16px 32px;
   cursor: pointer;
@@ -131,19 +144,9 @@ body {
   background-color: var(--ocean);
 }
 
-/* ========== ADVANTAGES-СЕКЦІЯ ========== */
+/* ===================== ADVANTAGES ===================== */
 .advantages {
   padding: 120px 0;
-}
-
-.section-title {
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 72px;
 }
 
 .advantages-list {
@@ -152,7 +155,7 @@ body {
   margin: 0;
 }
 
-.advantages-subtitle {
+.advantages-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -168,11 +171,20 @@ body {
   color: var(--slate);
 }
 
-/* ========== TEAM-СЕКЦІЯ ========== */
+/* ===================== TEAM ===================== */
 .team {
   background-color: var(--cloud);
   padding: 120px 0;
   text-align: center;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -187,7 +199,7 @@ body {
   margin: 0 auto;
 }
 
-.team-subtitle {
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -196,7 +208,7 @@ body {
   margin: 32px 0 8px;
 }
 
-.team-text {
+.team-position {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -204,10 +216,19 @@ body {
   margin-bottom: 32px;
 }
 
-/* ========== PORTFOLIO-СЕКЦІЯ ========== */
+/* ===================== PORTFOLIO ===================== */
 .portfolio {
   padding: 120px 0;
   text-align: center;
+}
+
+.portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -222,7 +243,7 @@ body {
   margin: 0 auto;
 }
 
-.portfolio-subtitle {
+.portfolio-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -231,7 +252,7 @@ body {
   margin: 32px 16px 8px;
 }
 
-.portfolio-text {
+.portfolio-type {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -239,8 +260,8 @@ body {
   margin: 0 16px 32px;
 }
 
-/* ========== FOOTER ========== */
-.footer-section {
+/* ===================== FOOTER ===================== */
+.footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
   color: var(--white);

@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <!-- Підключення Google Fonts -->
+
+    <!-- Підключення шрифтів з Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Підключення стилів -->
+
+    <!-- Підключення modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-...hash..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Підключення основного файлу стилів -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка сайту -->
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <!-- Логотип -->
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-accent">Studio</span></a
-          >
-          <!-- Навігаційне меню -->
+          <a href="./index.html" class="logo">
+            Web<span class="logo-accent">Studio</span>
+          </a>
           <ul class="nav-list">
             <li><a href="./index.html" class="nav-link">Студія</a></li>
-            <li><a href="#" class="nav-link">Портфоліо</a></li>
-            <li><a href="#" class="nav-link">Контакти</a></li>
+            <li><a href="" class="nav-link">Портфоліо</a></li>
+            <li><a href="" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
-        <!-- Контактна інформація -->
-        <address class="address">
-          <ul class="address-list">
+        <address class="contacts">
+          <ul class="contacts-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="address-link"
+              <a href="mailto:info@devstudio.com" class="contacts-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+380961111111" class="address-link"
+              <a href="tel:+380961111111" class="contacts-link"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -47,7 +56,7 @@
     </header>
 
     <main>
-      <!-- Герой-секція -->
+      <!-- Секція Герой -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
@@ -55,59 +64,72 @@
         </div>
       </section>
 
-      <!-- Секція "Наші переваги" -->
+      <!-- Секція Переваги -->
       <section class="advantages">
         <div class="container">
-          <h2 class="section-title">Наші переваги</h2>
+          <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Увага до деталей</h3>
               <p class="advantages-text">
-                Індивідуальний підхід до кожного проєкту.
+                Ідейні міркування, а також початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Пунктуальність</h3>
               <p class="advantages-text">
-                Дотримання термінів виконання робіт.
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Планування</h3>
-              <p class="advantages-text">Чітке планування етапів проєкту.</p>
+              <p class="advantages-text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
             </li>
-            <li>
+            <li class="advantages-item">
               <h3 class="advantages-title">Сучасні технології</h3>
               <p class="advantages-text">
-                Використання новітніх технологій у розробці.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Секція "Наша команда" -->
+      <!-- Секція Команда -->
       <section class="team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <img
+                src="./images/team-1.jpg"
+                alt="Ігор Дем'яненко"
+                width="264"
+              />
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-position">Product Designer</p>
             </li>
             <li class="team-item">
-              <img src="./images/team2.jpg" alt="Ольга Рєпіна" width="270" />
+              <img src="./images/team-2.jpg" alt="Ольга Рєпіна" width="264" />
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-position">Frontend Developer</p>
             </li>
             <li class="team-item">
-              <img src="./images/team3.jpg" alt="Микола Тарасов" width="270" />
+              <img src="./images/team-3.jpg" alt="Микола Тарасов" width="264" />
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-position">Marketing</p>
             </li>
             <li class="team-item">
-              <img src="./images/team4.jpg" alt="Михайло Єрмаков" width="270" />
+              <img
+                src="./images/team-4.jpg"
+                alt="Михайло Єрмаков"
+                width="264"
+              />
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-position">UI Designer</p>
             </li>
@@ -115,69 +137,71 @@
         </div>
       </section>
 
-      <!-- Секція "Наше портфоліо" -->
+      <!-- Секція Портфоліо -->
       <section class="portfolio">
         <div class="container">
-          <h2 class="section-title">Наше портфоліо</h2>
+          <h2 class="portfolio-title">Наше портфоліо</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <img
-                src="./images/portfolio1.jpg"
+                src="./images/portfolio-1.jpg"
                 alt="Банківський додаток"
                 width="360"
               />
-              <h3 class="portfolio-title">Банківський додаток</h3>
-              <p class="portfolio-text">App</p>
+              <h3 class="portfolio-name">Банківський додаток</h3>
+              <p class="portfolio-type">App</p>
             </li>
             <li class="portfolio-item">
               <img
-                src="./images/portfolio2.jpg"
+                src="./images/portfolio-2.jpg"
                 alt="Безготівковий розрахунок"
                 width="360"
               />
-              <h3 class="portfolio-title">Безготівковий розрахунок</h3>
-              <p class="portfolio-text">Marketing</p>
+              <h3 class="portfolio-name">Безготівковий розрахунок</h3>
+              <p class="portfolio-type">Marketing</p>
             </li>
             <li class="portfolio-item">
-              <img src="./images/portfolio3.jpg" alt="Медитація" width="360" />
-              <h3 class="portfolio-title">Медитація</h3>
-              <p class="portfolio-text">App</p>
+              <img src="./images/portfolio-3.jpg" alt="Медитація" width="360" />
+              <h3 class="portfolio-name">Медитація</h3>
+              <p class="portfolio-type">App</p>
             </li>
             <li class="portfolio-item">
-              <img src="./images/portfolio4.jpg" alt="Таксі" width="360" />
-              <h3 class="portfolio-title">Таксі</h3>
-              <p class="portfolio-text">Marketing</p>
+              <img src="./images/portfolio-4.jpg" alt="Таксі" width="360" />
+              <h3 class="portfolio-name">Таксі</h3>
+              <p class="portfolio-type">Marketing</p>
             </li>
             <li class="portfolio-item">
               <img
-                src="./images/portfolio5.jpg"
+                src="./images/portfolio-5.jpg"
                 alt="Екранні ілюстрації"
                 width="360"
               />
-              <h3 class="portfolio-title">Екранні ілюстрації</h3>
-              <p class="portfolio-text">Design</p>
+              <h3 class="portfolio-name">Екранні ілюстрації</h3>
+              <p class="portfolio-type">Design</p>
             </li>
             <li class="portfolio-item">
               <img
-                src="./images/portfolio6.jpg"
+                src="./images/portfolio-6.jpg"
                 alt="Онлайн курси"
                 width="360"
               />
-              <h3 class="portfolio-title">Онлайн курси</h3>
-              <p class="portfolio-text">Marketing</p>
+              <h3 class="portfolio-name">Онлайн курси</h3>
+              <p class="portfolio-type">Marketing</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <!-- Футер сайту -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-accent">Studio</span></a
-        >
-        <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
+        <a href="./index.html" class="logo">
+          Web<span class="logo-accent">Studio</span>
+        </a>
+        <p class="footer-text">
+          Інформаційні технології — це наше покликання. Ми створюємо рішення,
+          які допомагають бізнесу розвиватися.
+        </p>
       </div>
     </footer>
   </body>
