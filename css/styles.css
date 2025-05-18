@@ -1,181 +1,174 @@
-/* ========== ЗМІННІ ДЛЯ КОЛЬОРІВ І ШРИФТІВ ========== */
+/* ===================== ЗМІННІ ===================== */
 :root {
-  --iris: #4d5ae5; /* основний бренд */
-  --ocean: #404bbf; /* наведення на кнопки/посилання */
-  --navy-blue: #2e2f42; /* фон секцій hero/footer */
-  --green: #31d0aa; /* успішні повідомлення */
-  --slate: #434455; /* основний текст */
-  --light-slate: #8e8f99; /* додатковий текст */
-  --cornflower: #e7e9fc; /* рамки/границі */
-  --cloud: #f4f4fd; /* світлий фон (наприклад, команда) */
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --slate: #434455;
+  --cloud: #f4f4fd;
   --white: #ffffff;
-  --dairy: #fcfcfc;
+  --cornflower: #e7e9fc;
 
   --font-main: "Roboto", sans-serif;
-  --font-header: "Raleway", sans-serif;
-
-  --font-size-h1: 56px;
-  --font-size-h2: 36px;
-  --font-size-h3: 20px;
-  --font-size-body: 16px;
+  --font-accent: "Raleway", sans-serif;
 }
 
-/* ========== БАЗОВІ НАЛАШТУВАННЯ ========== */
+/* ===================== БАЗОВЕ ОФОРМЛЕННЯ ===================== */
 body {
   font-family: var(--font-main);
-  font-size: var(--font-size-body);
-  line-height: 1.5;
   color: var(--slate);
   background-color: var(--white);
   margin: 0;
 }
 
-/* Контейнер для обмеження ширини контенту */
+/* Контейнер */
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* ========== ХЕДЕР І НАВІГАЦІЯ ========== */
-.header {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--cornflower);
-  padding: 24px 0;
-}
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Логотип WebStudio */
-.logo {
+/* ===================== ЛОГОТИП ===================== */
+.logo-text {
+  font-family: var(--font-accent);
   font-weight: 700;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.logo .iris {
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--iris);
+  text-decoration: none;
 }
 
-.logo .studio {
+.logo-accent {
   color: var(--navy-blue);
 }
 
-/* Головне меню */
-.nav__list {
+.footer-logo-accent {
+  color: var(--cloud);
+}
+
+/* ===================== НАВІГАЦІЯ ===================== */
+.nav-list {
   list-style: none;
-  display: flex;
-  gap: 40px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-.nav__link {
+.nav-link {
   text-decoration: none;
-  color: var(--navy-blue);
   font-weight: 500;
-  transition: color 250ms;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 
-.nav__link:hover,
-.nav__link:focus,
-.nav__link.active {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--ocean);
 }
 
-/* Контактні дані */
-.contact {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
+/* ===================== КОНТАКТИ ===================== */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.contact__link {
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--slate);
-  font-size: 14px;
   text-decoration: none;
-  transition: color 250ms;
 }
 
-.contact__link:hover,
-.contact__link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--ocean);
 }
 
-/* ========== HERO СЕКЦІЯ (головне повідомлення) ========== */
-.hero {
-  background-color: var(--navy-blue);
-  color: var(--white);
-  text-align: center;
-  padding: 188px 0;
+.address-block {
+  font-style: normal;
 }
 
-.hero h1 {
-  font-size: var(--font-size-h1);
-  font-weight: 700;
+/* ===================== HERO ===================== */
+.hero-section {
+  background-color: var(--navy-blue);
+  padding: 188px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white);
   margin-bottom: 48px;
 }
 
-/* Кнопка заклику до дії */
-.btn-primary {
+.hero-button {
   background-color: var(--iris);
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white);
   border: none;
   padding: 16px 32px;
-  font-size: 16px;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: var(--ocean);
 }
 
-/* ========== СЕКЦІЯ ПЕРЕВАГ ========== */
-.features {
+/* ===================== FEATURES ===================== */
+.features-section {
   padding: 120px 0;
 }
 
-.features__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.feature h3 {
-  font-size: var(--font-size-h3);
+.features-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin-bottom: 8px;
 }
 
-.feature p {
-  font-size: var(--font-size-body);
+.features-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--slate);
 }
 
-/* ========== СЕКЦІЯ КОМАНДА ========== */
-.team {
+/* ===================== TEAM ===================== */
+.team-section {
   background-color: var(--cloud);
   padding: 120px 0;
   text-align: center;
 }
 
-.team h2 {
-  font-size: var(--font-size-h2);
-  margin-bottom: 72px;
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
-.team__cards {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
+.team-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -183,91 +176,76 @@ body {
 
 .team-card {
   background-color: var(--white);
-  border-radius: 0 0 4px 4px;
   width: 264px;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  overflow: hidden;
+  margin: 0 auto;
 }
 
-.team-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.team-card h3 {
-  margin: 32px 0 8px;
+.team-card-title {
+  font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin: 32px 0 8px;
 }
 
-.team-card p {
-  margin: 0 0 32px;
+.team-card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--slate);
+  margin-bottom: 32px;
 }
 
-/* ========== СЕКЦІЯ ПОРТФОЛІО ========== */
-.portfolio {
+/* ===================== PORTFOLIO ===================== */
+.portfolio-section {
   padding: 120px 0;
   text-align: center;
 }
 
-.portfolio h2 {
-  font-size: var(--font-size-h2);
-  margin-bottom: 72px;
+.portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
-.portfolio__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.portfolio-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.project-card {
-  background-color: var(--white);
-  text-align: left;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-card h3 {
-  font-size: var(--font-size-h3);
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--navy-blue);
   margin: 32px 16px 8px;
 }
 
-.project-card p {
-  margin: 0 16px 32px;
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--slate);
+  margin: 0 16px 32px;
 }
 
-/* ========== ФУТЕР (контактна інформація та опис) ========== */
-.footer {
+/* ===================== FOOTER ===================== */
+.footer-section {
   background-color: var(--navy-blue);
   color: var(--white);
   padding: 100px 0;
-  text-align: left;
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer__text {
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
   max-width: 264px;
-  font-size: var(--font-size-body);
 }
